@@ -9,6 +9,6 @@ title = 'GPTB2B — Индивидуальные ИИ-агенты для ваш
     hero_cta_primary = "Начать диалог"
     hero_cta_secondary = "Как это работает?"
     footer_tagline = "Разработка индивидуальных ИИ-решений для автоматизации B2B продаж и клиентской поддержки."
-    telegram = "@alogvinenko"
+    telegram = "@gptb2bru"
     webhook_url = "https://shumorusilu.beget.app/webhook/chat"
     # api_key = "YOUR_GOOGLE_AI_API_KEY"  # опционально, для чата через Google GenAI
