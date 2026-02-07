@@ -1,0 +1,8 @@
+
+{
+  "name": "GPTB2B.ru - Final",
+  "description": "Premium B2B landing page with Voice AI",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

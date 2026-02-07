@@ -1,0 +1,14 @@
+
+baseURL = 'https://gptb2b.ru/'
+languageCode = 'ru-ru'
+title = 'GPTB2B — Индивидуальные ИИ-агенты для вашего бизнеса'
+
+[params]
+    description = "Мы обучаем персональных ИИ-агентов на ваших PDF, сайтах и регламентах. Бот консультирует как эксперт и передает готовые заявки в Telegram за 1 секунду."
+    hero_badge = "Индивидуальное обучение на ваших данных"
+    hero_cta_primary = "Начать диалог"
+    hero_cta_secondary = "Как это работает?"
+    footer_tagline = "Разработка индивидуальных ИИ-решений для автоматизации B2B продаж и клиентской поддержки."
+    telegram = "@alogvinenko"
+    webhook_url = "https://shumorusilu.beget.app/webhook/chat"
+    # api_key = "YOUR_GOOGLE_AI_API_KEY"  # опционально, для чата через Google GenAI
