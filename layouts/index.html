@@ -42,13 +42,15 @@
                 <span class="text-2xl md:text-3xl font-black tracking-tighter uppercase">gptb2b</span>
             </div>
             <nav class="hidden lg:flex items-center gap-10 font-bold text-sm text-slate-400">
-                <a href="#demo" class="hover:text-white transition-colors">Попробовать</a>
-                <a href="#how" class="hover:text-white transition-colors">Технология RAG</a>
-                <a href="#benefits" class="hover:text-white transition-colors">Преимущества</a>
+                <a href="#how" class="hover:text-white transition-colors">Как это работает</a>
+                <a href="#comparison" class="hover:text-white transition-colors">Преимущества</a>
+                <a href="#rag" class="hover:text-white transition-colors">Технологии</a>
+                <a href="#demo" class="hover:text-white transition-colors">Демо</a>
+                <a href="#audience" class="hover:text-white transition-colors">Для кого</a>
                 <a href="https://t.me/{{ replace .Site.Params.telegram "@" "" }}" target="_blank" class="hover:text-white transition-colors">Telegram</a>
             </nav>
             <button onclick="window.open('https://t.me/{{ replace .Site.Params.telegram "@" "" }}', '_blank')" class="bg-white text-black px-6 py-2.5 md:px-8 md:py-3.5 rounded-xl md:rounded-2xl font-black text-sm md:text-base hover:scale-105 transition-all shadow-xl">
-                Заказать проект
+                Получить ИИ-сотрудника
             </button>
         </div>
     </header>
@@ -63,19 +65,24 @@
                         {{ .Site.Params.hero_badge | default "Индивидуальное обучение на ваших данных" }}
                     </div>
                     <h1 class="text-5xl md:text-8xl font-black leading-[0.9] mb-8 md:mb-12 tracking-tighter">
-                        Ваш бизнес <br><span class="gradient-text">в ритме ИИ</span>
+                        ИИ-сотрудник, который <span class="gradient-text">продает</span> за вас <span class="gradient-text">24/7</span>
                     </h1>
                     <p class="text-lg md:text-2xl text-slate-400 mb-10 md:mb-14 leading-relaxed font-medium">
-                        Мы обучаем персональных ИИ-агентов на <span class="text-white">ваших PDF, сайтах и регламентах</span>.
-                        Бот консультирует как эксперт и передает готовые заявки в Telegram за 1 секунду.
+                        Встройте в сайт чат-бота, который знает ваш бизнес, консультирует клиентов и сам собирает заявки. Без выходных, усталости и ошибок.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center lg:justify-start">
-                        <button onclick="document.getElementById('ai-input').focus()" class="px-10 py-5 md:px-12 md:py-6 gradient-bg rounded-[1.5rem] md:rounded-[2.5rem] font-black text-xl md:text-2xl shadow-2xl hover:scale-105 transition-all">
-                            {{ .Site.Params.hero_cta_primary | default "Начать диалог" }}
-                        </button>
-                        <a href="#how" class="px-10 py-5 md:px-12 md:py-6 border border-white/10 rounded-[1.5rem] md:rounded-[2.5rem] font-black text-xl md:text-2xl hover:bg-white/5 transition-all text-center">
-                            {{ .Site.Params.hero_cta_secondary | default "Как это работает?" }}
+                        <a href="#final-cta" class="px-10 py-5 md:px-12 md:py-6 gradient-bg rounded-[1.5rem] md:rounded-[2.5rem] font-black text-xl md:text-2xl shadow-2xl hover:scale-105 transition-all text-center">
+                            {{ .Site.Params.hero_cta_primary | default "Получить ИИ-сотрудника" }}
                         </a>
+                        <a href="https://t.me/{{ replace .Site.Params.telegram "@" "" }}" target="_blank" class="px-10 py-5 md:px-12 md:py-6 border border-white/10 rounded-[1.5rem] md:rounded-[2.5rem] font-black text-xl md:text-2xl hover:bg-white/5 transition-all text-center flex items-center justify-center gap-2">
+                            <i data-lucide="send" class="w-5 h-5"></i> Заказать в Telegram
+                        </a>
+                    </div>
+                    <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-white/10 pt-8">
+                        <div class="text-center lg:text-left"><div class="text-2xl font-black text-purple-400">24/7</div><div class="mt-1 text-sm text-slate-500 font-medium">Без перерывов</div></div>
+                        <div class="text-center lg:text-left"><div class="text-2xl font-black text-purple-400">1-2 сек</div><div class="mt-1 text-sm text-slate-500 font-medium">Время ответа</div></div>
+                        <div class="text-center lg:text-left"><div class="text-2xl font-black text-purple-400">100%</div><div class="mt-1 text-sm text-slate-500 font-medium">Знание продукта</div></div>
+                        <div class="text-center lg:text-left"><div class="text-2xl font-black text-purple-400">0</div><div class="mt-1 text-sm text-slate-500 font-medium">Потерянных лидов</div></div>
                     </div>
                 </div>
 
@@ -88,10 +95,10 @@
                                     <i data-lucide="bot" class="w-6 h-6 md:w-8 md:h-8"></i>
                                 </div>
                                 <div>
-                                    <div class="font-black text-lg md:text-xl uppercase tracking-tighter">AI Digital Clone</div>
+                                    <div class="font-black text-lg md:text-xl uppercase tracking-tighter">ИИ-ассистент GPTB2B</div>
                                     <div class="flex items-center gap-2">
                                         <span class="w-2 h-2 rounded-full bg-emerald-500 glow-dot"></span>
-                                        <span class="text-[10px] text-emerald-400 font-bold uppercase tracking-widest">Knowledge Base Active</span>
+                                        <span class="text-[10px] text-emerald-400 font-bold uppercase tracking-widest">Онлайн</span>
                                     </div>
                                 </div>
                             </div>
@@ -102,9 +109,8 @@
                         <div id="chat-messages" class="chat-container chat-scroll p-6 md:p-10 overflow-y-auto gap-6 md:gap-8 text-base md:text-lg font-medium bg-slate-950/20">
                             <div class="message-bot p-6 max-w-[85%] leading-relaxed shadow-lg">
                                 <p class="text-xs text-purple-400 font-black uppercase mb-2 tracking-widest">System Message</p>
-                                Привет! Я — ИИ-ассистент, обученный на базе знаний <b>GPTB2B.ru</b>.<br><br>
-                                Я знаю всё о том, как обучить ИИ на ваших документах и настроить передачу лидов в Telegram.<br><br>
-                                <b>Нажмите на микрофон</b> и спросите меня: «В чем преимущество RAG?»
+                                Здравствуйте! Я ИИ-ассистент GPTB2B.<br><br>
+                                Это демо того, как ваш будущий бот будет общаться с клиентами. Задайте мне вопрос или выберите тему ниже.
                             </div>
                         </div>
                         <div class="p-6 md:p-10 bg-slate-900/40 border-t border-white/5">
@@ -113,7 +119,7 @@
                                     <i data-lucide="mic" class="w-6 h-6 md:w-9 md:h-9"></i>
                                 </button>
                                 <div class="relative flex-1">
-                                    <input id="ai-input" type="text" placeholder="Задайте вопрос ассистенту..." autocomplete="off" class="w-full bg-slate-950/80 border border-white/10 rounded-[1.5rem] md:rounded-[2.5rem] px-6 py-4 md:px-10 md:py-8 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all font-bold text-sm md:text-xl">
+                                    <input id="ai-input" type="text" placeholder="Напишите сообщение..." autocomplete="off" class="w-full bg-slate-950/80 border border-white/10 rounded-[1.5rem] md:rounded-[2.5rem] px-6 py-4 md:px-10 md:py-8 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all font-bold text-sm md:text-xl">
                                     <button type="submit" id="send-btn" class="absolute right-3 top-3 md:right-4 md:top-4 w-10 h-10 md:w-16 md:h-16 gradient-bg rounded-full flex items-center justify-center text-white hover:scale-110 transition-all shadow-xl">
                                         <i data-lucide="arrow-up" class="w-5 h-5 md:w-8 md:h-8"></i>
                                     </button>
@@ -127,56 +133,316 @@
 
         <section id="how" class="py-24 md:py-48 bg-slate-900/30 border-y border-white/5 relative overflow-hidden">
             <div class="max-w-[1200px] mx-auto px-6 relative z-10">
-                <div class="text-center mb-24 md:mb-32">
-                    <h2 class="text-5xl md:text-8xl font-black mb-8 tracking-tighter">Технология <br><span class="gradient-text">Deep RAG</span></h2>
-                    <p class="text-xl md:text-3xl text-slate-400 font-medium max-w-4xl mx-auto leading-relaxed">
-                        Мы не просто подключаем ChatGPT. Мы создаем цифровой индекс вашей компании,
-                        превращая ИИ в эксперта, который никогда не ошибается в фактах.
+                <div class="mb-16 max-w-2xl">
+                    <p class="mb-3 text-sm font-bold uppercase tracking-widest text-purple-400">Процесс</p>
+                    <h2 class="text-5xl md:text-7xl font-black mb-6 tracking-tighter">Как это работает</h2>
+                    <p class="text-lg md:text-xl text-slate-400 font-medium leading-relaxed">
+                        Четыре шага от подключения до первых заявок. Без программирования и сложных настроек.
                     </p>
                 </div>
-                <div class="grid md:grid-cols-3 gap-8 md:gap-12">
-                    <div class="glass-card feature-card p-10 md:p-14 rounded-[3rem] transition-all duration-500">
-                        <div class="w-20 h-20 bg-purple-500/10 rounded-3xl flex items-center justify-center text-purple-500 mb-10 mx-auto">
-                            <i data-lucide="database" class="w-10 h-10"></i>
+                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                    <div class="glass-card feature-card p-8 md:p-10 rounded-[2rem] transition-all duration-500">
+                        <div class="mb-6 flex items-center justify-between">
+                            <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500"><i data-lucide="database" class="w-6 h-6"></i></div>
+                            <span class="text-3xl font-black text-slate-600">01</span>
                         </div>
-                        <h3 class="text-3xl font-black mb-6 tracking-tight">Data Ingestion</h3>
-                        <p class="text-slate-400 text-lg font-medium leading-relaxed">
-                            Бот изучает ваши PDF, DOCX, Google Docs и сайты. Каждое слово вашего бизнеса становится частью его интеллекта.
+                        <h3 class="text-xl font-black mb-3 tracking-tight">Подключаем данные</h3>
+                        <p class="text-slate-400 text-sm font-medium leading-relaxed">
+                            Загружаете сайт, файлы, базы знаний. Бот получает полную информацию о вашем бизнесе, продуктах и услугах.
                         </p>
                     </div>
-                    <div class="glass-card feature-card p-10 md:p-14 rounded-[3rem] border-blue-500/10 transition-all duration-500">
-                        <div class="w-20 h-20 bg-blue-500/10 rounded-3xl flex items-center justify-center text-blue-500 mb-10 mx-auto">
-                            <i data-lucide="cpu" class="w-10 h-10"></i>
+                    <div class="glass-card feature-card p-8 md:p-10 rounded-[2rem] transition-all duration-500">
+                        <div class="mb-6 flex items-center justify-between">
+                            <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500"><i data-lucide="brain" class="w-6 h-6"></i></div>
+                            <span class="text-3xl font-black text-slate-600">02</span>
                         </div>
-                        <h3 class="text-3xl font-black mb-6 tracking-tight">AI Reasoning</h3>
-                        <p class="text-slate-400 text-lg font-medium leading-relaxed">
-                            Используя Gemini 3.0 Pro, агент анализирует запрос и находит точный ответ в вашей базе данных за миллисекунды.
+                        <h3 class="text-xl font-black mb-3 tracking-tight">Обучаем через RAG</h3>
+                        <p class="text-slate-400 text-sm font-medium leading-relaxed">
+                            ИИ обрабатывает данные с помощью Retrieval Augmented Generation. Бот отвечает строго на основе ваших данных.
                         </p>
                     </div>
-                    <div class="glass-card feature-card p-10 md:p-14 rounded-[3rem] border-emerald-500/10 transition-all duration-500">
-                        <div class="w-20 h-20 bg-emerald-500/10 rounded-3xl flex items-center justify-center text-emerald-500 mb-10 mx-auto">
-                            <i data-lucide="send" class="w-10 h-10"></i>
+                    <div class="glass-card feature-card p-8 md:p-10 rounded-[2rem] transition-all duration-500">
+                        <div class="mb-6 flex items-center justify-between">
+                            <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500"><i data-lucide="settings" class="w-6 h-6"></i></div>
+                            <span class="text-3xl font-black text-slate-600">03</span>
                         </div>
-                        <h3 class="text-3xl font-black mb-6 tracking-tight">Direct Leads</h3>
-                        <p class="text-slate-400 text-lg font-medium leading-relaxed">
-                            Как только клиент проявляет интерес, бот квалифицирует лида и отправляет уведомление в ваш Telegram.
+                        <h3 class="text-xl font-black mb-3 tracking-tight">Настраиваем агентов</h3>
+                        <p class="text-slate-400 text-sm font-medium leading-relaxed">
+                            Мультиагентная архитектура: агенты продаж, поддержки и квалификации работают как слаженная команда.
+                        </p>
+                    </div>
+                    <div class="glass-card feature-card p-8 md:p-10 rounded-[2rem] transition-all duration-500">
+                        <div class="mb-6 flex items-center justify-between">
+                            <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500"><i data-lucide="message-square" class="w-6 h-6"></i></div>
+                            <span class="text-3xl font-black text-slate-600">04</span>
+                        </div>
+                        <h3 class="text-xl font-black mb-3 tracking-tight">Бот продает</h3>
+                        <p class="text-slate-400 text-sm font-medium leading-relaxed">
+                            Чат-бот общается с клиентами, отвечает на вопросы, выявляет интерес и собирает заявки автоматически.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="benefits" class="py-24 md:py-48 px-6">
+        <section id="comparison" class="py-24 md:py-48 px-6 bg-slate-900/20">
+            <div class="max-w-5xl mx-auto">
+                <div class="mb-16 text-center">
+                    <p class="mb-3 text-sm font-bold uppercase tracking-widest text-purple-400">Сравнение</p>
+                    <h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tighter">Почему это работает лучше людей</h2>
+                    <p class="text-lg text-slate-400 font-medium max-w-2xl mx-auto leading-relaxed">
+                        Не заменяет вашу команду полностью, но берет на себя рутину первой линии.
+                    </p>
+                </div>
+                <div class="overflow-hidden rounded-2xl border border-white/10 glass-card">
+                    <div class="grid grid-cols-3 border-b border-white/10 bg-slate-900/50">
+                        <div class="px-6 py-4 text-sm font-bold text-slate-400">Параметр</div>
+                        <div class="px-6 py-4 text-center text-sm font-bold text-slate-400">Менеджер</div>
+                        <div class="px-6 py-4 text-center text-sm font-bold text-purple-400">ИИ-бот</div>
+                    </div>
+                    <div class="grid grid-cols-3 border-b border-white/5 hover:bg-white/5 transition-colors">
+                        <div class="px-6 py-4 text-sm font-bold text-slate-200">Время ответа</div>
+                        <div class="px-6 py-4 text-center text-sm text-slate-500">1-10 минут</div>
+                        <div class="px-6 py-4 text-center text-sm text-slate-200"><span class="text-purple-400">✓</span> 1-2 секунды</div>
+                    </div>
+                    <div class="grid grid-cols-3 border-b border-white/5 hover:bg-white/5 transition-colors">
+                        <div class="px-6 py-4 text-sm font-bold text-slate-200">Доступность</div>
+                        <div class="px-6 py-4 text-center text-sm text-slate-500">8 часов в день</div>
+                        <div class="px-6 py-4 text-center text-sm text-slate-200"><span class="text-purple-400">✓</span> 24/7, 365 дней</div>
+                    </div>
+                    <div class="grid grid-cols-3 border-b border-white/5 hover:bg-white/5 transition-colors">
+                        <div class="px-6 py-4 text-sm font-bold text-slate-200">Стоимость / мес.</div>
+                        <div class="px-6 py-4 text-center text-sm text-slate-500">от 80 000 руб.</div>
+                        <div class="px-6 py-4 text-center text-sm text-slate-200"><span class="text-purple-400">✓</span> от 15 000 руб.</div>
+                    </div>
+                    <div class="grid grid-cols-3 border-b border-white/5 hover:bg-white/5 transition-colors">
+                        <div class="px-6 py-4 text-sm font-bold text-slate-200">Ошибки в данных</div>
+                        <div class="px-6 py-4 text-center text-sm text-slate-500">Человеческий фактор</div>
+                        <div class="px-6 py-4 text-center text-sm text-slate-200"><span class="text-purple-400">✓</span> Строго по базе знаний</div>
+                    </div>
+                    <div class="grid grid-cols-3 border-b border-white/5 hover:bg-white/5 transition-colors">
+                        <div class="px-6 py-4 text-sm font-bold text-slate-200">Потеря лидов</div>
+                        <div class="px-6 py-4 text-center text-sm text-slate-500">Забыл, не увидел</div>
+                        <div class="px-6 py-4 text-center text-sm text-slate-200"><span class="text-purple-400">✓</span> Невозможна</div>
+                    </div>
+                    <div class="grid grid-cols-3 hover:bg-white/5 transition-colors">
+                        <div class="px-6 py-4 text-sm font-bold text-slate-200">Настроение</div>
+                        <div class="px-6 py-4 text-center text-sm text-slate-500">Зависит от дня</div>
+                        <div class="px-6 py-4 text-center text-sm text-slate-200"><span class="text-purple-400">✓</span> Стабильно идеально</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rag" class="py-24 md:py-48 px-6 bg-slate-900/30 border-y border-white/5">
+            <div class="max-w-[1200px] mx-auto">
+                <div class="grid gap-16 lg:grid-cols-2 lg:items-center">
+                    <div>
+                        <p class="mb-3 text-sm font-bold uppercase tracking-widest text-purple-400">Технология RAG</p>
+                        <h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tighter">ИИ говорит только то, что есть в ваших данных</h2>
+                        <p class="mb-6 text-lg text-slate-400 font-medium leading-relaxed">
+                            RAG (Retrieval Augmented Generation) — технология, при которой ИИ сначала находит нужную информацию в вашей базе знаний, а затем генерирует ответ на её основе.
+                        </p>
+                        <p class="text-lg text-slate-400 font-medium leading-relaxed">
+                            Бот не обращается к общим знаниям интернета. Он работает исключительно с теми данными, которые вы загрузили: сайт, документы, прайсы, FAQ.
+                        </p>
+                        <div class="mt-10 flex flex-wrap items-center gap-3">
+                            <span class="rounded-lg border border-white/10 bg-slate-800/50 px-4 py-2.5 text-sm font-medium text-slate-300">Вопрос клиента</span>
+                            <span class="text-slate-500">→</span>
+                            <span class="rounded-lg border border-purple-500/30 bg-purple-500/10 px-4 py-2.5 text-sm font-medium text-purple-400">Поиск в базе</span>
+                            <span class="text-slate-500">→</span>
+                            <span class="rounded-lg border border-white/10 bg-slate-800/50 px-4 py-2.5 text-sm font-medium text-slate-300">Точный ответ</span>
+                        </div>
+                    </div>
+                    <div class="grid gap-6 sm:grid-cols-2">
+                        <div class="glass-card p-6 rounded-2xl transition-colors hover:border-purple-500/20">
+                            <div class="mb-4 w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center text-purple-500"><i data-lucide="database" class="w-5 h-5"></i></div>
+                            <h3 class="text-base font-black mb-2">Поиск по базе знаний</h3>
+                            <p class="text-sm text-slate-400 leading-relaxed">При каждом вопросе бот находит релевантные фрагменты из ваших данных и формирует ответ на их основе.</p>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl transition-colors hover:border-purple-500/20">
+                            <div class="mb-4 w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center text-purple-500"><i data-lucide="file-text" class="w-5 h-5"></i></div>
+                            <h3 class="text-base font-black mb-2">Без фантазий</h3>
+                            <p class="text-sm text-slate-400 leading-relaxed">ИИ не придумывает ответы. Если информации нет в базе, бот честно сообщит и предложит связаться с менеджером.</p>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl transition-colors hover:border-purple-500/20">
+                            <div class="mb-4 w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center text-purple-500"><i data-lucide="shield" class="w-5 h-5"></i></div>
+                            <h3 class="text-base font-black mb-2">Безопасно для B2B</h3>
+                            <p class="text-sm text-slate-400 leading-relaxed">Ваши данные не используются для обучения модели. Бот работает в изолированном контуре с вашей базой знаний.</p>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl transition-colors hover:border-purple-500/20">
+                            <div class="mb-4 w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center text-purple-500"><i data-lucide="lock" class="w-5 h-5"></i></div>
+                            <h3 class="text-base font-black mb-2">Контролируемые ответы</h3>
+                            <p class="text-sm text-slate-400 leading-relaxed">Вы сами определяете, что бот может говорить. Полный контроль над источниками и тоном общения.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 md:py-48 px-6 bg-slate-900/20">
+            <div class="max-w-[1200px] mx-auto">
+                <div class="mb-16 text-center">
+                    <p class="mb-3 text-sm font-bold uppercase tracking-widest text-purple-400">Мультиагентная архитектура</p>
+                    <h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tighter">Команда ИИ-сотрудников внутри одного чата</h2>
+                    <p class="text-lg text-slate-400 font-medium max-w-2xl mx-auto leading-relaxed">
+                        Четыре специализированных агента работают вместе. Клиент видит единый чат, а внутри — слаженная команда.
+                    </p>
+                </div>
+                <div class="grid gap-6 md:grid-cols-2">
+                    <div class="glass-card feature-card p-8 rounded-2xl border-purple-500/20 transition-all">
+                        <div class="flex items-start gap-5">
+                            <div class="w-14 h-14 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500 shrink-0"><i data-lucide="headphones" class="w-7 h-7"></i></div>
+                            <div>
+                                <h3 class="text-xl font-black mb-2">Агент-консультант</h3>
+                                <p class="text-slate-400 leading-relaxed">Отвечает на вопросы о продуктах, услугах, условиях. Знает всё о вашем бизнесе и говорит на языке клиента.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-card feature-card p-8 rounded-2xl border-emerald-500/20 transition-all">
+                        <div class="flex items-start gap-5">
+                            <div class="w-14 h-14 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-500 shrink-0"><i data-lucide="trending-up" class="w-7 h-7"></i></div>
+                            <div>
+                                <h3 class="text-xl font-black mb-2">Агент-продавец</h3>
+                                <p class="text-slate-400 leading-relaxed">Выявляет потребность, предлагает решение, подводит к заявке. Работает по сценариям, которые вы утвердили.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-card feature-card p-8 rounded-2xl border-amber-500/20 transition-all">
+                        <div class="flex items-start gap-5">
+                            <div class="w-14 h-14 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-500 shrink-0"><i data-lucide="user-check" class="w-7 h-7"></i></div>
+                            <div>
+                                <h3 class="text-xl font-black mb-2">Агент-квалификатор</h3>
+                                <p class="text-slate-400 leading-relaxed">Оценивает потенциал лида: бюджет, сроки, потребности. Передает горячих клиентов вашей команде.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-card feature-card p-8 rounded-2xl border-rose-500/20 transition-all">
+                        <div class="flex items-start gap-5">
+                            <div class="w-14 h-14 bg-rose-500/10 rounded-xl flex items-center justify-center text-rose-500 shrink-0"><i data-lucide="bar-chart-3" class="w-7 h-7"></i></div>
+                            <div>
+                                <h3 class="text-xl font-black mb-2">Агент-аналитик</h3>
+                                <p class="text-slate-400 leading-relaxed">Собирает данные о диалогах, частых вопросах, узких местах. Помогает улучшать продукт и сервис.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-10 text-center text-slate-400 font-medium">Агенты автоматически переключаются в зависимости от контекста. Клиент получает <span class="text-white font-bold">бесшовный опыт общения</span> с вашей компанией.</p>
+            </div>
+        </section>
+
+        <section class="py-24 md:py-48 px-6 bg-slate-900/30 border-y border-white/5">
+            <div class="max-w-[1200px] mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <p class="mb-3 text-sm font-bold uppercase tracking-widest text-purple-400">Голосовое управление</p>
+                        <h2 class="text-4xl md:text-5xl font-black mb-6 tracking-tighter">Говорите с ботом голосом</h2>
+                        <p class="mb-8 text-lg text-slate-400 font-medium leading-relaxed">
+                            Клиент может не только писать, но и говорить. Бот распознает речь и отвечает мгновенно. Идеально для мобильных пользователей.
+                        </p>
+                        <ul class="space-y-5">
+                            <li class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center text-purple-500 shrink-0"><i data-lucide="mic" class="w-5 h-5"></i></div>
+                                <div><strong class="text-slate-200">Распознавание речи</strong><br><span class="text-sm text-slate-500">Точное распознавание русской речи с учетом контекста вашего бизнеса.</span></div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center text-purple-500 shrink-0"><i data-lucide="smartphone" class="w-5 h-5"></i></div>
+                                <div><strong class="text-slate-200">Мобильный опыт</strong><br><span class="text-sm text-slate-500">Удобно с любого устройства. Нажал кнопку, задал вопрос, получил ответ.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center"><div class="w-48 h-48 rounded-full border-2 border-purple-500/20 flex items-center justify-center"><i data-lucide="mic" class="w-16 h-16 text-purple-500"></i></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 md:py-48 px-6 bg-slate-900/20">
+            <div class="max-w-[1200px] mx-auto">
+                <div class="mb-16 text-center">
+                    <p class="mb-3 text-sm font-bold uppercase tracking-widest text-purple-400">Скорость</p>
+                    <h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tighter">Мгновенные ответы без очередей</h2>
+                    <p class="text-lg text-slate-400 font-medium max-w-2xl mx-auto leading-relaxed">Каждая секунда ожидания — потерянный клиент. ИИ-бот отвечает в реальном времени.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="glass-card p-8 rounded-2xl text-center transition-all hover:border-purple-500/30">
+                        <div class="w-14 h-14 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500 mx-auto mb-6"><i data-lucide="zap" class="w-7 h-7"></i></div>
+                        <div class="text-5xl font-black text-slate-100 mb-2">1-2 <span class="text-2xl text-purple-400 font-bold">сек</span></div>
+                        <h3 class="text-lg font-black mb-3">Среднее время ответа</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Бот анализирует вопрос и формирует ответ быстрее, чем клиент успеет переключиться на другую вкладку.</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-2xl text-center transition-all hover:border-purple-500/30">
+                        <div class="w-14 h-14 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500 mx-auto mb-6"><i data-lucide="users" class="w-7 h-7"></i></div>
+                        <div class="text-5xl font-black text-slate-100 mb-2">∞</div>
+                        <h3 class="text-lg font-black mb-3">Параллельных диалогов</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Одновременное общение с десятками и сотнями клиентов без задержек.</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-2xl text-center transition-all hover:border-purple-500/30">
+                        <div class="w-14 h-14 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500 mx-auto mb-6"><i data-lucide="clock" class="w-7 h-7"></i></div>
+                        <div class="text-5xl font-black text-slate-100 mb-2">0</div>
+                        <h3 class="text-lg font-black mb-3">Очередей</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Клиент пишет — бот мгновенно реагирует. Даже в пиковые часы.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="audience" class="py-24 md:py-48 px-6 bg-slate-900/30 border-y border-white/5">
+            <div class="max-w-[1200px] mx-auto">
+                <div class="mb-16 text-center">
+                    <p class="mb-3 text-sm font-bold uppercase tracking-widest text-purple-400">Для кого</p>
+                    <h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tighter">Решение для B2B-компаний любого масштаба</h2>
+                    <p class="text-lg text-slate-400 font-medium max-w-2xl mx-auto leading-relaxed">Если у вас есть сайт и клиенты, которые задают вопросы, ИИ-бот окупит себя в первый месяц.</p>
+                </div>
+                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="glass-card feature-card p-8 rounded-2xl transition-all hover:border-purple-500/30">
+                        <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500 mb-5"><i data-lucide="monitor" class="w-6 h-6"></i></div>
+                        <h3 class="text-lg font-black mb-2">SaaS-компании</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Автоматизация поддержки, онбординг клиентов, сбор фидбека и квалификация лидов на сайте.</p>
+                    </div>
+                    <div class="glass-card feature-card p-8 rounded-2xl transition-all hover:border-purple-500/30">
+                        <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500 mb-5"><i data-lucide="factory" class="w-6 h-6"></i></div>
+                        <h3 class="text-lg font-black mb-2">Производство</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Консультации по продукции, прием заявок на расчет, информация о наличии и сроках поставки.</p>
+                    </div>
+                    <div class="glass-card feature-card p-8 rounded-2xl transition-all hover:border-purple-500/30">
+                        <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500 mb-5"><i data-lucide="briefcase" class="w-6 h-6"></i></div>
+                        <h3 class="text-lg font-black mb-2">Услуги</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Запись на консультацию, ответы на типовые вопросы, предварительная квалификация клиентов.</p>
+                    </div>
+                    <div class="glass-card feature-card p-8 rounded-2xl transition-all hover:border-purple-500/30">
+                        <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500 mb-5"><i data-lucide="code-2" class="w-6 h-6"></i></div>
+                        <h3 class="text-lg font-black mb-2">IT-компании</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Техподдержка первой линии, демо-запросы, сбор требований от потенциальных клиентов.</p>
+                    </div>
+                    <div class="glass-card feature-card p-8 rounded-2xl transition-all hover:border-purple-500/30">
+                        <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500 mb-5"><i data-lucide="graduation-cap" class="w-6 h-6"></i></div>
+                        <h3 class="text-lg font-black mb-2">Консалтинг</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">Первичная диагностика потребностей, презентация экспертизы, запись на стратегическую сессию.</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-2xl border-purple-500/30 bg-purple-500/5 text-center flex flex-col items-center justify-center">
+                        <h3 class="text-lg font-black mb-2">Ваша отрасль</h3>
+                        <p class="text-sm text-slate-400 mb-5 leading-relaxed">Не нашли свой сегмент? Бот адаптируется под любой бизнес.</p>
+                        <a href="https://t.me/{{ replace .Site.Params.telegram "@" "" }}" target="_blank" class="rounded-lg gradient-bg px-5 py-2.5 text-sm font-bold text-white hover:scale-105 transition-all">Написать в Telegram</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="final-cta" class="py-24 md:py-48 px-6">
             <div class="max-w-[1200px] mx-auto glass-card rounded-[3rem] md:rounded-[5rem] p-12 md:p-32 text-center relative overflow-hidden">
                 <div class="absolute inset-0 gradient-bg opacity-10"></div>
                 <div class="relative z-10">
-                    <h2 class="text-5xl md:text-8xl font-black mb-10 tracking-tighter">Начните <br><span class="gradient-text">прямо сейчас</span></h2>
-                    <p class="text-xl md:text-3xl text-slate-400 mb-16 max-w-2xl mx-auto font-medium leading-relaxed">
-                        Оставьте конкурентов позади с помощью индивидуального ИИ-агента. Запуск проекта за 3–5 дней.
+                    <h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tighter">Пока конкуренты отвечают завтра — ваш ИИ уже продает сегодня</h2>
+                    <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto font-medium leading-relaxed">
+                        Подключите ИИ-сотрудника, который знает ваш бизнес и работает без перерывов. Первые результаты — с первого дня.
                     </p>
-                    <button onclick="window.open('https://t.me/{{ replace .Site.Params.telegram "@" "" }}', '_blank')" class="bg-white text-black px-12 py-6 rounded-[1.5rem] md:rounded-[2rem] font-black text-2xl hover:scale-105 transition-all shadow-2xl">
-                        Связаться в Telegram
-                    </button>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4"><a href="https://t.me/{{ replace .Site.Params.telegram "@" "" }}" target="_blank" class="inline-flex items-center gap-2 gradient-bg px-8 py-4 rounded-xl font-black text-base hover:opacity-90 transition-all shadow-xl">
+                        Получить ИИ-чат-бота <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://t.me/{{ replace .Site.Params.telegram "@" "" }}" target="_blank" class="inline-flex items-center gap-2 border border-white/10 px-8 py-4 rounded-xl font-black text-base text-slate-400 hover:border-purple-500 hover:text-white transition-all">
+                            <i data-lucide="send" class="w-4 h-4"></i> Заказать в Telegram
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -198,8 +464,10 @@
             <div>
                 <h5 class="text-white font-black text-lg uppercase tracking-widest mb-10">Навигация</h5>
                 <ul class="space-y-6 text-slate-500 font-bold">
-                    <li><a href="#demo" class="hover:text-purple-400 transition-colors">Попробовать</a></li>
-                    <li><a href="#how" class="hover:text-purple-400 transition-colors">Технологии</a></li>
+                    <li><a href="#how" class="hover:text-purple-400 transition-colors">Как это работает</a></li>
+                    <li><a href="#comparison" class="hover:text-purple-400 transition-colors">Преимущества</a></li>
+                    <li><a href="#demo" class="hover:text-purple-400 transition-colors">Демо</a></li>
+                    <li><a href="#audience" class="hover:text-purple-400 transition-colors">Для кого</a></li>
                     <li><a href="https://t.me/{{ replace .Site.Params.telegram "@" "" }}" class="hover:text-purple-400 transition-colors">Telegram</a></li>
                 </ul>
             </div>

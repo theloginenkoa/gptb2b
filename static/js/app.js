@@ -4,7 +4,7 @@
 (function () {
   const WEBHOOK_URL = window.GPTB2B_WEBHOOK_URL || '';
   const STORAGE_KEY = 'gptb2bChatHistory';
-  const WELCOME_BOT = 'Привет! Я — ИИ-ассистент, обученный на базе знаний <b>GPTB2B.ru</b>.<br><br>Я знаю всё о том, как обучить ИИ на ваших документах и настроить передачу лидов в Telegram.<br><br><b>Нажмите на микрофон</b> и спросите меня: «В чем преимущество RAG?»';
+  const WELCOME_BOT = 'Здравствуйте! Я ИИ-ассистент GPTB2B.<br><br>Это демо того, как ваш будущий бот будет общаться с клиентами. Задайте мне вопрос или выберите тему ниже.';
 
   const chatState = {
     chatHistory: [],
