@@ -10,5 +10,5 @@ title = 'GPTB2B — ИИ-сотрудник для вашего сайта'
     hero_cta_secondary = "Как это работает?"
     footer_tagline = "gptb2b.ru — ИИ-сотрудники для B2B-компаний"
     telegram = "@gptb2bru"
-    webhook_url = "https://shumorusilu.beget.app/webhook/chat"
+    webhook_url = "https://shumorusilu.beget.app/webhook-test/chat"
     # api_key = "YOUR_GOOGLE_AI_API_KEY"  # опционально, для чата через Google GenAI
