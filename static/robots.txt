@@ -1,5 +1,6 @@
 User-agent: *
 Disallow:
 
+
 Sitemap: https://gptb2b.ru/sitemap.xml
 Host: https://gptb2b.ru
