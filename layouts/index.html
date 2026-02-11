@@ -103,33 +103,33 @@
     <!-- /Yandex.Metrika counter -->
 
     <main>
-        <section id="demo" class="pt-16 md:pt-28 pb-10 md:pb-16 px-6 overflow-hidden">
+        <section id="demo" class="pt-24 md:pt-40 pb-10 md:pb-16 px-6 overflow-hidden">
             <div class="max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-16 md:gap-24 items-center">
                 <div class="text-center lg:text-left relative">
                     <div class="absolute -top-24 -left-24 w-64 h-64 bg-purple-600/20 blur-[100px] rounded-full"></div>
-                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-black uppercase tracking-widest mb-8">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-[11px] font-black uppercase tracking-widest mb-6">
                         <span class="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></span>
                         {{ .Site.Params.hero_badge | default "Индивидуальное обучение на ваших данных" }}
                     </div>
-                    <h1 class="text-5xl md:text-8xl font-black leading-[0.9] mb-8 md:mb-12 tracking-tighter">
+                    <h1 class="text-4xl md:text-6xl font-black leading-[0.95] mb-6 md:mb-10 tracking-tighter">
                         ИИ-сотрудник, который <span class="gradient-text">продает</span> за вас <span class="gradient-text">24/7</span>
                     </h1>
-                    <p class="text-lg md:text-2xl text-slate-400 mb-10 md:mb-14 leading-relaxed font-medium">
+                    <p class="text-base md:text-xl text-slate-400 mb-8 md:mb-12 leading-relaxed font-medium">
                         Встройте в сайт чат-бота, который знает ваш бизнес, консультирует клиентов и сам собирает заявки. Без выходных, усталости и ошибок.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center lg:justify-start">
-                        <a href="#final-cta" class="px-10 py-5 md:px-12 md:py-6 gradient-bg rounded-[1.5rem] md:rounded-[2.5rem] font-black text-xl md:text-2xl shadow-2xl hover:scale-105 transition-all text-center">
+                    <div class="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center lg:justify-start">
+                        <a href="#final-cta" class="px-8 py-4 md:px-10 md:py-5 gradient-bg rounded-[1.5rem] md:rounded-[2.5rem] font-black text-lg md:text-xl shadow-2xl hover:scale-105 transition-all text-center">
                             {{ .Site.Params.hero_cta_primary | default "Получить ИИ-сотрудника" }}
                         </a>
-                        <a href="https://t.me/{{ replace .Site.Params.telegram "@" "" }}" target="_blank" class="px-10 py-5 md:px-12 md:py-6 border border-white/10 rounded-[1.5rem] md:rounded-[2.5rem] font-black text-xl md:text-2xl hover:bg-white/5 transition-all text-center flex items-center justify-center gap-2">
+                        <a href="https://t.me/{{ replace .Site.Params.telegram "@" "" }}" target="_blank" class="px-8 py-4 md:px-10 md:py-5 border border-white/10 rounded-[1.5rem] md:rounded-[2.5rem] font-black text-lg md:text-xl hover:bg-white/5 transition-all text-center flex items-center justify-center gap-2">
                             <i data-lucide="send" class="w-5 h-5"></i> Заказать в Telegram
                         </a>
                     </div>
-                    <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-white/10 pt-8">
-                        <div class="text-center lg:text-left"><div class="text-2xl font-black text-purple-400">24/7</div><div class="mt-1 text-sm text-slate-500 font-medium">Без перерывов</div></div>
-                        <div class="text-center lg:text-left"><div class="text-2xl font-black text-purple-400">1-2 сек</div><div class="mt-1 text-sm text-slate-500 font-medium">Время ответа</div></div>
-                        <div class="text-center lg:text-left"><div class="text-2xl font-black text-purple-400">100%</div><div class="mt-1 text-sm text-slate-500 font-medium">Знание продукта</div></div>
-                        <div class="text-center lg:text-left"><div class="text-2xl font-black text-purple-400">0</div><div class="mt-1 text-sm text-slate-500 font-medium">Потерянных лидов</div></div>
+                    <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-5 border-t border-white/10 pt-6">
+                        <div class="text-center lg:text-left"><div class="text-xl font-black text-purple-400">24/7</div><div class="mt-1 text-xs text-slate-500 font-medium">Без перерывов</div></div>
+                        <div class="text-center lg:text-left"><div class="text-xl font-black text-purple-400">1-2 сек</div><div class="mt-1 text-xs text-slate-500 font-medium">Время ответа</div></div>
+                        <div class="text-center lg:text-left"><div class="text-xl font-black text-purple-400">100%</div><div class="mt-1 text-xs text-slate-500 font-medium">Знание продукта</div></div>
+                        <div class="text-center lg:text-left"><div class="text-xl font-black text-purple-400">0</div><div class="mt-1 text-xs text-slate-500 font-medium">Потерянных лидов</div></div>
                     </div>
                 </div>
 
@@ -153,7 +153,7 @@
                                 <i data-lucide="refresh-cw" class="w-5 h-5"></i>
                             </button>
                         </div>
-                        <div id="chat-messages" class="chat-container chat-scroll p-6 md:p-10 overflow-y-auto gap-6 md:gap-8 text-base md:text-lg font-medium bg-slate-950/20">
+                        <div id="chat-messages" class="chat-container chat-scroll p-6 md:p-10 overflow-y-auto gap-5 md:gap-7 text-sm md:text-base font-medium bg-slate-950/20">
                             <div class="message-bot p-6 max-w-[85%] leading-relaxed shadow-lg">
                                 <p class="text-xs text-purple-400 font-black uppercase mb-2 tracking-widest">System Message</p>
                                 Здравствуйте! Я ИИ-ассистент GPTB2B.<br><br>
@@ -166,7 +166,7 @@
                                     <i data-lucide="mic" class="w-6 h-6 md:w-9 md:h-9"></i>
                                 </button>
                                 <div class="relative flex-1">
-                                    <input id="ai-input" type="text" placeholder="Напишите сообщение..." autocomplete="off" class="w-full bg-slate-950/80 border border-white/10 rounded-[1.5rem] md:rounded-[2.5rem] px-6 py-4 md:px-10 md:py-8 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all font-bold text-sm md:text-xl">
+                                    <input id="ai-input" type="text" placeholder="Напишите сообщение..." autocomplete="off" class="w-full bg-slate-950/80 border border-white/10 rounded-[1.5rem] md:rounded-[2.5rem] px-6 py-4 md:px-10 md:py-8 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all font-bold text-sm md:text-lg">
                                     <button type="submit" id="send-btn" class="absolute right-3 top-3 md:right-4 md:top-4 w-10 h-10 md:w-16 md:h-16 gradient-bg rounded-full flex items-center justify-center text-white hover:scale-110 transition-all shadow-xl">
                                         <i data-lucide="arrow-up" class="w-5 h-5 md:w-8 md:h-8"></i>
                                     </button>
