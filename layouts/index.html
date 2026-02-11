@@ -18,7 +18,7 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
     <style>
         :root { --accent: #a855f7; --bg: #020617; }
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--bg); color: #f8fafc; scroll-behavior: smooth; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--bg); color: #f8fafc; scroll-behavior: auto; }
         .gradient-text { background: linear-gradient(135deg, #a855f7 0%, #6366f1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .gradient-bg { background: linear-gradient(135deg, #a855f7 0%, #6366f1 100%); }
         .glass-card { background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.08); }
@@ -38,6 +38,17 @@
         .typing-dot:nth-child(2) { animation-delay: 0.2s; }
         .typing-dot:nth-child(3) { animation-delay: 0.4s; }
         @keyframes typingDot { 0%,60%,100% { transform: translateY(0); opacity: 0.6; } 30% { transform: translateY(-3px); opacity: 1; } }
+
+        @media (max-width: 768px) {
+            .glass-card {
+                backdrop-filter: blur(10px);
+                background: rgba(15, 23, 42, 0.9);
+            }
+            .chat-container {
+                height: auto;
+                max-height: 600px;
+            }
+        }
     </style>
 </head>
 <body class="selection:bg-purple-500/30">
