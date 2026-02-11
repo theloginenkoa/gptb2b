@@ -104,24 +104,24 @@
 
     <main>
         <section id="demo" class="pt-24 md:pt-40 pb-10 md:pb-16 px-6 overflow-hidden">
-            <div class="max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-16 md:gap-24 items-center">
+            <div class="max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-16 md:gap-24 items-start">
                 <div class="text-center lg:text-left relative">
                     <div class="absolute -top-24 -left-24 w-64 h-64 bg-purple-600/20 blur-[100px] rounded-full"></div>
                     <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-[11px] font-black uppercase tracking-widest mb-6">
                         <span class="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></span>
                         {{ .Site.Params.hero_badge | default "Индивидуальное обучение на ваших данных" }}
                     </div>
-                    <h1 class="text-4xl md:text-6xl font-black leading-[0.95] mb-6 md:mb-10 tracking-tighter">
+                    <h1 class="text-6xl md:text-8xl font-black leading-[0.9] mb-6 md:mb-10 tracking-tighter">
                         ИИ-сотрудник, который <span class="gradient-text">продает</span> за вас <span class="gradient-text">24/7</span>
                     </h1>
                     <p class="text-base md:text-xl text-slate-400 mb-8 md:mb-12 leading-relaxed font-medium">
                         Встройте в сайт чат-бота, который знает ваш бизнес, консультирует клиентов и сам собирает заявки. Без выходных, усталости и ошибок.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center lg:justify-start">
-                        <a href="#final-cta" class="px-8 py-4 md:px-10 md:py-5 gradient-bg rounded-[1.5rem] md:rounded-[2.5rem] font-black text-lg md:text-xl shadow-2xl hover:scale-105 transition-all text-center">
+                        <a href="#final-cta" class="px-8 py-4 md:px-10 md:py-5 gradient-bg rounded-[1.5rem] md:rounded-[2.5rem] font-black text-xs md:text-base shadow-2xl hover:scale-105 transition-all text-center">
                             {{ .Site.Params.hero_cta_primary | default "Получить ИИ-сотрудника" }}
                         </a>
-                        <a href="https://t.me/{{ replace .Site.Params.telegram "@" "" }}" target="_blank" class="px-8 py-4 md:px-10 md:py-5 border border-white/10 rounded-[1.5rem] md:rounded-[2.5rem] font-black text-lg md:text-xl hover:bg-white/5 transition-all text-center flex items-center justify-center gap-2">
+                        <a href="https://t.me/{{ replace .Site.Params.telegram "@" "" }}" target="_blank" class="px-8 py-4 md:px-10 md:py-5 border border-white/10 rounded-[1.5rem] md:rounded-[2.5rem] font-black text-xs md:text-base hover:bg-white/5 transition-all text-center flex items-center justify-center gap-2">
                             <i data-lucide="send" class="w-5 h-5"></i> Заказать в Telegram
                         </a>
                     </div>
@@ -283,7 +283,7 @@
 
         <section id="rag" class="py-12 md:py-24 px-6 bg-slate-900/30 border-y border-white/5">
             <div class="max-w-[1200px] mx-auto">
-                <div class="grid gap-16 lg:grid-cols-2 lg:items-center">
+                <div class="grid gap-16 lg:grid-cols-2 lg:items-start">
                     <div>
                         <p class="mb-3 text-sm font-bold uppercase tracking-widest text-purple-400">Технология RAG</p>
                         <h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tighter">ИИ говорит только то, что есть в ваших данных</h2>
@@ -336,7 +336,7 @@
                         Четыре специализированных агента работают вместе. Клиент видит единый чат, а внутри — слаженная команда.
                     </p>
                 </div>
-                <div class="grid gap-6 md:grid-cols-2">
+                <div class="grid gap-6 md:grid-cols-2 items-start">
                     <div class="glass-card feature-card p-8 rounded-2xl border-purple-500/20 transition-all">
                         <div class="flex items-start gap-5">
                             <div class="w-14 h-14 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500 shrink-0"><i data-lucide="headphones" class="w-7 h-7"></i></div>
