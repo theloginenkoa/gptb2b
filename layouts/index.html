@@ -49,14 +49,61 @@
                 <a href="#audience" class="hover:text-white transition-colors">Для кого</a>
                 <a href="https://t.me/{{ replace .Site.Params.telegram "@" "" }}" target="_blank" class="hover:text-white transition-colors">Telegram</a>
             </nav>
-            <button onclick="window.open('https://t.me/{{ replace .Site.Params.telegram "@" "" }}', '_blank')" class="bg-white text-black px-6 py-2.5 md:px-8 md:py-3.5 rounded-xl md:rounded-2xl font-black text-sm md:text-base hover:scale-105 transition-all shadow-xl">
+            <button onclick="window.open('https://t.me/{{ replace .Site.Params.telegram "@" "" }}', '_blank')" class="bg-white text-black px-4 py-2 md:px-8 md:py-3.5 rounded-xl md:rounded-2xl font-black text-xs md:text-base hover:scale-105 transition-all shadow-xl">
                 Получить ИИ-сотрудника
             </button>
         </div>
     </header>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] =
+                m[i] ||
+                function () {
+                    (m[i].a = m[i].a || []).push(arguments);
+                };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                    return;
+                }
+            }
+            ((k = e.createElement(t)),
+                (a = e.getElementsByTagName(t)[0]),
+                (k.async = 1),
+                (k.src = r),
+                a.parentNode.insertBefore(k, a));
+        })(
+            window,
+            document,
+            "script",
+            "https://mc.yandex.ru/metrika/tag.js?id=106724105",
+            "ym",
+        );
+
+        ym(106724105, "init", {
+            ssr: true,
+            webvisor: true,
+            clickmap: true,
+            ecommerce: "dataLayer",
+            referrer: document.referrer,
+            url: location.href,
+            accurateTrackBounce: true,
+            trackLinks: true,
+        });
+    </script>
+    <noscript
+        ><div>
+            <img
+                src="https://mc.yandex.ru/watch/106724105"
+                style="position: absolute; left: -9999px"
+                alt=""
+            /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
 
     <main>
-        <section id="demo" class="pt-32 md:pt-56 pb-20 md:pb-32 px-6 overflow-hidden">
+        <section id="demo" class="pt-16 md:pt-28 pb-10 md:pb-16 px-6 overflow-hidden">
             <div class="max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-16 md:gap-24 items-center">
                 <div class="text-center lg:text-left relative">
                     <div class="absolute -top-24 -left-24 w-64 h-64 bg-purple-600/20 blur-[100px] rounded-full"></div>
@@ -131,7 +178,7 @@
             </div>
         </section>
 
-        <section id="how" class="py-24 md:py-48 bg-slate-900/30 border-y border-white/5 relative overflow-hidden">
+        <section id="how" class="py-12 md:py-24 bg-slate-900/30 border-y border-white/5 relative overflow-hidden">
             <div class="max-w-[1200px] mx-auto px-6 relative z-10">
                 <div class="mb-16 max-w-2xl">
                     <p class="mb-3 text-sm font-bold uppercase tracking-widest text-purple-400">Процесс</p>
@@ -185,7 +232,7 @@
             </div>
         </section>
 
-        <section id="comparison" class="py-24 md:py-48 px-6 bg-slate-900/20">
+        <section id="comparison" class="py-12 md:py-24 px-6 bg-slate-900/20">
             <div class="max-w-5xl mx-auto">
                 <div class="mb-16 text-center">
                     <p class="mb-3 text-sm font-bold uppercase tracking-widest text-purple-400">Сравнение</p>
@@ -234,7 +281,7 @@
             </div>
         </section>
 
-        <section id="rag" class="py-24 md:py-48 px-6 bg-slate-900/30 border-y border-white/5">
+        <section id="rag" class="py-12 md:py-24 px-6 bg-slate-900/30 border-y border-white/5">
             <div class="max-w-[1200px] mx-auto">
                 <div class="grid gap-16 lg:grid-cols-2 lg:items-center">
                     <div>
@@ -280,7 +327,7 @@
             </div>
         </section>
 
-        <section class="py-24 md:py-48 px-6 bg-slate-900/20">
+        <section class="py-12 md:py-24 px-6 bg-slate-900/20">
             <div class="max-w-[1200px] mx-auto">
                 <div class="mb-16 text-center">
                     <p class="mb-3 text-sm font-bold uppercase tracking-widest text-purple-400">Мультиагентная архитектура</p>
@@ -331,7 +378,7 @@
             </div>
         </section>
 
-        <section class="py-24 md:py-48 px-6 bg-slate-900/30 border-y border-white/5">
+        <section class="py-12 md:py-24 px-6 bg-slate-900/30 border-y border-white/5">
             <div class="max-w-[1200px] mx-auto">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
                     <div>
@@ -356,7 +403,7 @@
             </div>
         </section>
 
-        <section class="py-24 md:py-48 px-6 bg-slate-900/20">
+        <section class="py-12 md:py-24 px-6 bg-slate-900/20">
             <div class="max-w-[1200px] mx-auto">
                 <div class="mb-16 text-center">
                     <p class="mb-3 text-sm font-bold uppercase tracking-widest text-purple-400">Скорость</p>
@@ -386,7 +433,7 @@
             </div>
         </section>
 
-        <section id="audience" class="py-24 md:py-48 px-6 bg-slate-900/30 border-y border-white/5">
+        <section id="audience" class="py-12 md:py-24 px-6 bg-slate-900/30 border-y border-white/5">
             <div class="max-w-[1200px] mx-auto">
                 <div class="mb-16 text-center">
                     <p class="mb-3 text-sm font-bold uppercase tracking-widest text-purple-400">Для кого</p>
@@ -428,7 +475,7 @@
             </div>
         </section>
 
-        <section id="final-cta" class="py-24 md:py-48 px-6">
+        <section id="final-cta" class="py-12 md:py-24 px-6">
             <div class="max-w-[1200px] mx-auto glass-card rounded-[3rem] md:rounded-[5rem] p-12 md:p-32 text-center relative overflow-hidden">
                 <div class="absolute inset-0 gradient-bg opacity-10"></div>
                 <div class="relative z-10">
