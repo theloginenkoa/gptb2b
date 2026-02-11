@@ -40,12 +40,14 @@
 </head>
 <body class="selection:bg-purple-500/30">
     <header class="fixed top-0 left-0 right-0 z-50 px-6 py-6 md:py-8">
-        <div class="max-w-[1400px] mx-auto flex items-center justify-between glass-card px-6 py-4 md:px-10 md:py-5 rounded-[2rem] md:rounded-[2.5rem]">
+        <div class="max-w-[1400px] mx-auto flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between glass-card px-6 py-4 md:px-10 md:py-5 rounded-[2rem] md:rounded-[2.5rem]">
             <div class="flex items-center gap-3">
                 <div class="w-10 h-10 md:w-12 md:h-12 gradient-bg rounded-2xl flex items-center justify-center text-white shadow-lg">
                     <i data-lucide="bot" class="w-6 h-6 md:w-7 md:h-7"></i>
                 </div>
-                <span class="text-2xl md:text-3xl font-black tracking-tighter uppercase">gptb2b</span>
+                <span class="text-2xl md:text-3xl font-black tracking-tighter uppercase">
+                    GPT<span class="gradient-text">B2B</span>
+                </span>
             </div>
             <nav class="hidden lg:flex items-center gap-10 font-bold text-sm text-slate-400">
                 <a href="#how" class="hover:text-white transition-colors">Как это работает</a>
@@ -173,7 +175,7 @@
                                 </button>
                                 <div class="relative flex-1 h-14 md:h-20">
                                     <input id="ai-input" type="text" placeholder="Напишите сообщение..." autocomplete="off" class="w-full h-full bg-slate-950/80 border border-white/10 rounded-[1.5rem] md:rounded-[2.5rem] px-4 md:px-8 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all font-bold text-sm md:text-lg">
-                                    <button type="submit" id="send-btn" class="absolute right-3 top-3 md:right-4 md:top-4 w-10 h-10 md:w-16 md:h-16 gradient-bg rounded-full flex items-center justify-center text-white hover:scale-110 transition-all shadow-xl">
+                                    <button type="submit" id="send-btn" class="absolute right-3 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-16 md:h-16 gradient-bg rounded-full flex items-center justify-center text-white hover:scale-110 transition-all shadow-xl">
                                         <i data-lucide="arrow-up" class="w-5 h-5 md:w-8 md:h-8"></i>
                                     </button>
                                 </div>
@@ -501,14 +503,16 @@
         </section>
     </main>
 
-    <footer class="bg-slate-950 py-20 md:py-32 border-t border-white/5 px-6">
+        <footer class="bg-slate-950 py-20 md:py-32 border-t border-white/5 px-6">
         <div class="max-w-[1400px] mx-auto grid md:grid-cols-4 gap-16 md:gap-24">
             <div class="md:col-span-2">
                 <div class="flex items-center gap-4 mb-10">
                     <div class="w-12 h-12 gradient-bg rounded-2xl flex items-center justify-center text-white">
                         <i data-lucide="bot" class="w-7 h-7"></i>
                     </div>
-                    <span class="text-4xl font-black tracking-tighter uppercase">gptb2b</span>
+                    <span class="text-4xl font-black tracking-tighter uppercase">
+                        GPT<span class="gradient-text">B2B</span>
+                    </span>
                 </div>
                 <p class="text-slate-500 text-xl font-medium leading-relaxed max-w-sm">
                     {{ .Site.Params.footer_tagline | default "Разработка индивидуальных ИИ-решений для автоматизации B2B продаж и клиентской поддержки." }}
