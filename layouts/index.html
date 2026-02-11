@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content={{ .Site.Description }}>
+    <title>{{ .Site.Title }}</title>
     <title>{{ .Site.Title }}</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -110,13 +112,13 @@
                     <div class="absolute -top-24 -left-24 w-64 h-64 bg-purple-600/20 blur-[100px] rounded-full"></div>
                     <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-[11px] font-black uppercase tracking-widest mb-6">
                         <span class="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></span>
-                        {{ .Site.Params.hero_badge | default "Индивидуальное обучение на ваших данных" }}
+                        {{ .Site.Params.hero_badge | default "GPT B2B Индивидуальное обучение на ваших данных" }}
                     </div>
                     <h1 class="text-6xl md:text-8xl font-black leading-[0.9] mb-6 md:mb-10 tracking-tighter">
                         ИИ-сотрудник, который <span class="gradient-text">продает</span> за вас <span class="gradient-text">24/7</span>
                     </h1>
                     <p class="text-base md:text-xl text-slate-400 mb-8 md:mb-12 leading-relaxed font-medium">
-                        Встройте в сайт чат-бота, который знает ваш бизнес, консультирует клиентов и сам собирает заявки. Без выходных, усталости и ошибок.
+                        Встройте в сайт чат-бота GPT B2B, который знает ваш бизнес, консультирует клиентов и сам собирает заявки. Без выходных, усталости и ошибок.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center lg:justify-start">
                         <a href="#final-cta" class="px-8 py-4 md:px-10 md:py-5 gradient-bg rounded-[1.5rem] md:rounded-[2.5rem] font-black text-xs md:text-base shadow-2xl hover:scale-105 transition-all text-center">
@@ -157,7 +159,7 @@
                         <div id="chat-messages" class="chat-container chat-scroll p-6 md:p-10 overflow-y-auto gap-5 md:gap-7 text-sm md:text-base font-medium bg-slate-950/20">
                             <div class="message-bot p-6 max-w-[85%] leading-relaxed shadow-lg">
                                 <p class="text-xs text-purple-400 font-black uppercase mb-2 tracking-widest">System Message</p>
-                                Здравствуйте! Я ИИ-ассистент GPTB2B.<br><br>
+                                Здравствуйте! Я ИИ-ассистент GPT B2B.<br><br>
                                 Это демо того, как ваш будущий бот будет общаться с клиентами. Задайте мне вопрос или выберите тему ниже.
                             </div>
                         </div>
@@ -185,7 +187,7 @@
                     <p class="mb-3 text-sm font-bold uppercase tracking-widest text-purple-400">Процесс</p>
                     <h2 class="text-5xl md:text-7xl font-black mb-6 tracking-tighter">Как это работает</h2>
                     <p class="text-lg md:text-xl text-slate-400 font-medium leading-relaxed">
-                        Четыре шага от подключения до первых заявок. Без программирования и сложных настроек.
+                        Четыре шага от подключения GPT B2B до первых заявок. Без программирования и сложных настроек.
                     </p>
                 </div>
                 <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -196,7 +198,7 @@
                         </div>
                         <h3 class="text-xl font-black mb-3 tracking-tight">Подключаем данные</h3>
                         <p class="text-slate-400 text-sm font-medium leading-relaxed">
-                            Загружаете сайт, файлы, базы знаний. Бот получает полную информацию о вашем бизнесе, продуктах и услугах.
+                            Загружаете в сайт, файлы, базы знаний. GPT B2B бот получает полную информацию о вашем бизнесе, продуктах и услугах.
                         </p>
                     </div>
                     <div class="glass-card feature-card p-8 md:p-10 rounded-[2rem] transition-all duration-500">
@@ -206,7 +208,7 @@
                         </div>
                         <h3 class="text-xl font-black mb-3 tracking-tight">Обучаем через RAG</h3>
                         <p class="text-slate-400 text-sm font-medium leading-relaxed">
-                            ИИ обрабатывает данные с помощью Retrieval Augmented Generation. Бот отвечает строго на основе ваших данных.
+                            ИИ обрабатывает данные с помощью Retrieval Augmented Generation. GPT B2B бот отвечает строго на основе ваших данных.
                         </p>
                     </div>
                     <div class="glass-card feature-card p-8 md:p-10 rounded-[2rem] transition-all duration-500">
@@ -224,9 +226,9 @@
                             <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500"><i data-lucide="message-square" class="w-6 h-6"></i></div>
                             <span class="text-3xl font-black text-slate-600">04</span>
                         </div>
-                        <h3 class="text-xl font-black mb-3 tracking-tight">Бот продает</h3>
+                        <h3 class="text-xl font-black mb-3 tracking-tight">GPT B2B бот продает</h3>
                         <p class="text-slate-400 text-sm font-medium leading-relaxed">
-                            Чат-бот общается с клиентами, отвечает на вопросы, выявляет интерес и собирает заявки автоматически.
+                            GPT B2B чат-бот общается с клиентами, отвечает на вопросы, выявляет интерес и собирает заявки автоматически.
                         </p>
                     </div>
                 </div>
@@ -237,7 +239,7 @@
             <div class="max-w-5xl mx-auto">
                 <div class="mb-16 text-center">
                     <p class="mb-3 text-sm font-bold uppercase tracking-widest text-purple-400">Сравнение</p>
-                    <h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tighter">Почему это работает лучше людей</h2>
+                    <h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tighter">Почему GPT B2B работает лучше людей</h2>
                     <p class="text-lg text-slate-400 font-medium max-w-2xl mx-auto leading-relaxed">
                         Не заменяет вашу команду полностью, но берет на себя рутину первой линии.
                     </p>
@@ -416,7 +418,7 @@
                         <div class="w-14 h-14 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500 mx-auto mb-6"><i data-lucide="zap" class="w-7 h-7"></i></div>
                         <div class="text-5xl font-black text-slate-100 mb-2">1-2 <span class="text-2xl text-purple-400 font-bold">сек</span></div>
                         <h3 class="text-lg font-black mb-3">Среднее время ответа</h3>
-                        <p class="text-sm text-slate-400 leading-relaxed">Бот анализирует вопрос и формирует ответ быстрее, чем клиент успеет переключиться на другую вкладку.</p>
+                        <p class="text-sm text-slate-400 leading-relaxed">GPT B2B бот анализирует вопрос и формирует ответ быстрее, чем клиент успеет переключиться на другую вкладку.</p>
                     </div>
                     <div class="glass-card p-8 rounded-2xl text-center transition-all hover:border-purple-500/30">
                         <div class="w-14 h-14 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500 mx-auto mb-6"><i data-lucide="users" class="w-7 h-7"></i></div>
