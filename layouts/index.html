@@ -62,53 +62,6 @@
             </button>
         </div>
     </header>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function (m, e, t, r, i, k, a) {
-            m[i] =
-                m[i] ||
-                function () {
-                    (m[i].a = m[i].a || []).push(arguments);
-                };
-            m[i].l = 1 * new Date();
-            for (var j = 0; j < document.scripts.length; j++) {
-                if (document.scripts[j].src === r) {
-                    return;
-                }
-            }
-            ((k = e.createElement(t)),
-                (a = e.getElementsByTagName(t)[0]),
-                (k.async = 1),
-                (k.src = r),
-                a.parentNode.insertBefore(k, a));
-        })(
-            window,
-            document,
-            "script",
-            "https://mc.yandex.ru/metrika/tag.js?id=106724105",
-            "ym",
-        );
-
-        ym(106724105, "init", {
-            ssr: true,
-            webvisor: true,
-            clickmap: true,
-            ecommerce: "dataLayer",
-            referrer: document.referrer,
-            url: location.href,
-            accurateTrackBounce: true,
-            trackLinks: true,
-        });
-    </script>
-    <noscript
-        ><div>
-            <img
-                src="https://mc.yandex.ru/watch/106724105"
-                style="position: absolute; left: -9999px"
-                alt=""
-            /></div
-    ></noscript>
-    <!-- /Yandex.Metrika counter -->
 
     <main>
         <section id="demo" class="pt-24 md:pt-40 pb-10 md:pb-16 px-6 overflow-hidden">
@@ -503,7 +456,7 @@
         </section>
     </main>
 
-        <footer class="bg-slate-950 py-20 md:py-32 border-t border-white/5 px-6">
+    <footer class="bg-slate-950 py-20 md:py-32 border-t border-white/5 px-6">
         <div class="max-w-[1400px] mx-auto grid md:grid-cols-4 gap-16 md:gap-24">
             <div class="md:col-span-2">
                 <div class="flex items-center gap-4 mb-10">
@@ -559,5 +512,52 @@
     <script>
         window.addEventListener('load', () => lucide.createIcons());
     </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] =
+                m[i] ||
+                function () {
+                    (m[i].a = m[i].a || []).push(arguments);
+                };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                    return;
+                }
+            }
+            ((k = e.createElement(t)),
+                (a = e.getElementsByTagName(t)[0]),
+                (k.async = 1),
+                (k.src = r),
+                a.parentNode.insertBefore(k, a));
+        })(
+            window,
+            document,
+            "script",
+            "https://mc.yandex.ru/metrika/tag.js?id=106724105",
+            "ym",
+        );
+
+        ym(106724105, "init", {
+            ssr: true,
+            webvisor: true,
+            clickmap: true,
+            ecommerce: "dataLayer",
+            referrer: document.referrer,
+            url: location.href,
+            accurateTrackBounce: true,
+            trackLinks: true,
+        });
+    </script>
+    <noscript
+        ><div>
+            <img
+                src="https://mc.yandex.ru/watch/106724105"
+                style="position: absolute; left: -9999px"
+                alt=""
+            /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
 </body>
 </html>
